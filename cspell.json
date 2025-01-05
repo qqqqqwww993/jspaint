@@ -14,6 +14,7 @@
 		"*.icns",
 		"*.wav",
 		"*.psd",
+		"*.mp4",
 		"localization"
 	],
 	"words": [

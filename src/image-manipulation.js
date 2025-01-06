@@ -1103,7 +1103,7 @@ function compute_bezier(t, start_x, start_y, control_1_x, control_1_y, control_2
 	const mt = 1 - t;
 	const mt2 = mt * mt;
 	const t2 = t * t;
-	let a, b, c, d = 0;
+	let a = 0, b = 0, c = 0, d = 0;
 
 	a = mt2 * mt;
 	b = mt2 * t * 3;

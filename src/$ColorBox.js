@@ -9,7 +9,7 @@ import { $G, E, make_canvas } from "./helpers.js";
  * Used by the Colors Box and by the Edit Colors dialog.
  * @param {string | CanvasPattern} color
  * @returns {JQuery<HTMLDivElement>}
- **/
+ */
 function $Swatch(color) {
 	const $swatch = $(E("div")).addClass("swatch");
 	const swatch_canvas = make_canvas();

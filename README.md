@@ -373,8 +373,6 @@ If you use [GitHub Desktop](https://desktop.github.com/), you can view diffs of 
 
 To open the Cypress UI, first run `npm run test:start-server`, then concurrently `npm run cy:open`
 
-~~Tests are also run in continuous integration [with Travis CI](https://travis-ci.org/1j01/jspaint).~~
-
 ### Web App (https://jspaint.app)
 
 After you've installed dependencies with `npm i`,

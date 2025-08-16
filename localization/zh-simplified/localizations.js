@@ -477,5 +477,7 @@ loaded_localizations("zh-simplified", {
 	"The file is not in the correct format.": "文件格式不对。",
 	"Not enough room to paste text.": "空间不够，无法粘贴文字。",
 	"Enlarge the text area and try again.": "请加大文字区，然后重试。",
-	"Places the text.": "放置文字。"
+	"Places the text.": "放置文字。",
+	"E&xtras": "更多 (&X)",
+	"&History": "历史记录 (&H)"
 });

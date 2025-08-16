@@ -790,9 +790,9 @@ const menus = {
 			//description: localize("Displays program information, version number, and copyright."),
 		},
 	],
-	[localize("E&xtras")]: [
+	["E&xtras")]: [
 		{
-			emoji_icon: "⌚",
+			emoji_icon: "",
 			label: localize("&History"),
 			...shortcut("Ctrl+Shift+Y"),
 			speech_recognition: [
@@ -802,7 +802,7 @@ const menus = {
 			description: localize("Shows the document history and lets you navigate to states not accessible with Undo or Repeat."),
 		},
 		{
-			emoji_icon: "🎞️",
+			emoji_icon: "",
 			label: localize("&Render History As GIF"),
 			...shortcut("Ctrl+Shift+G"),
 			speech_recognition: [
@@ -853,7 +853,7 @@ const menus = {
 		// 	description: localize("Configures JS Paint."),
 		// }
 		{
-			emoji_icon: "🤪",
+			emoji_icon: "",
 			label: localize("&Draw Randomly"),
 			speech_recognition: [
 				"draw randomly", "draw pseudorandomly", "draw wildly", "make random art",
@@ -874,7 +874,7 @@ const menus = {
 		},
 		MENU_DIVIDER,
 		{
-			emoji_icon: "👥",
+			emoji_icon: "",
 			label: localize("&Multi-User"),
 			submenu: [
 				{
@@ -966,11 +966,11 @@ const menus = {
 			],
 		},
 		{
-			emoji_icon: "💄",
+			emoji_icon: "",
 			label: localize("&Themes"),
 			submenu: [
 				{
-					emoji_icon: "⬜",
+					emoji_icon: "",
 					label: localize("&Classic Light"),
 					speech_recognition: [
 						"reset theme", "revert theme setting",
@@ -1003,7 +1003,7 @@ const menus = {
 					description: localize("Makes JS Paint look like MS Paint from Windows 98."),
 				},
 				{
-					emoji_icon: "⬛",
+					emoji_icon: "",
 					label: localize("Classic &Dark"),
 					speech_recognition: [
 						"dark theme", "switch to dark theme", "use dark theme", "set theme to dark", "set theme dark", "switch to dark theme", "switch theme to dark", "switch theme dark",
@@ -1023,7 +1023,7 @@ const menus = {
 					description: localize("Makes JS Paint look like MS Paint from Windows 98, with a dark color scheme."),
 				},
 				{
-					emoji_icon: "⚪",
+					emoji_icon: "",
 					label: localize("&Modern Light"),
 					speech_recognition: [
 						"modern theme", "switch to modern theme", "use modern theme", "set theme to modern", "set theme modern", "switch to modern theme", "switch theme to modern", "switch theme modern",
@@ -1037,7 +1037,7 @@ const menus = {
 					description: localize("Gives JS Paint a more modern look, with light colors."),
 				},
 				{
-					emoji_icon: "⚫",
+					emoji_icon: "",
 					label: localize("Mod&ern Dark"),
 					speech_recognition: [
 						"dark modern theme", "switch to dark modern theme", "use dark modern theme", "set theme to dark modern", "set theme dark modern", "switch to dark modern theme", "switch theme to dark modern", "switch theme dark modern",
@@ -1051,7 +1051,7 @@ const menus = {
 					description: localize("Gives JS Paint a more modern look, with dark colors."),
 				},
 				{
-					emoji_icon: "❄️",
+					emoji_icon: "",
 					label: localize("&Winter"),
 					speech_recognition: [
 						"winter theme", "switch to winter theme", "use winter theme", "set theme to winter", "set theme winter", "switch to winter theme", "switch theme to winter", "switch theme winter",
@@ -1066,7 +1066,7 @@ const menus = {
 					description: localize("Makes JS Paint look festive for the holidays."),
 				},
 				{
-					emoji_icon: "🤘",
+					emoji_icon: "",
 					label: localize("&Occult"),
 					speech_recognition: [
 						"occult theme", "switch to occult theme", "use occult theme", "set theme to occult", "set theme occult", "switch to occult theme", "switch theme to occult", "switch theme occult",
@@ -1117,7 +1117,7 @@ const menus = {
 					description: localize("Starts the ritual."),
 				},
 				{
-					emoji_icon: "🫧",
+					emoji_icon: "",
 					label: localize("&Bubblegum"),
 					speech_recognition: [
 						"bubblegum theme", "switch to bubblegum theme", "use bubblegum theme", "set theme to bubblegum", "set theme bubblegum", "switch to bubblegum theme", "switch theme to bubblegum", "switch theme bubblegum",
@@ -1175,7 +1175,7 @@ const menus = {
 			],
 		},
 		{
-			emoji_icon: "🌍",
+			emoji_icon: "",
 			label: localize("&Language"),
 			submenu: available_languages.map((available_language) => (
 				{
@@ -1190,7 +1190,7 @@ const menus = {
 			)),
 		},
 		{
-			emoji_icon: "🧑",
+			emoji_icon: "",
 			// label: localize("Head Tracking"),
 			// label: localize("M&ove Cursor With Head"),
 			label: localize("Head Tracker"), // adding (Experimental) makes it too long, "WIP" or "Beta" feels too techy
@@ -1223,7 +1223,7 @@ const menus = {
 		// Later on I'll probably merge the Head Tracker and Dwell Clicker options into a Tracky Mouse option,
 		// or I'll create a preferences screen, where I'll be able to better clarify the relationships between features.
 		{
-			emoji_icon: "⏱️",
+			emoji_icon: "⏱",
 			// label: localize("Dwell &Click"),
 			label: localize("Dwell &Clicker"),
 			speech_recognition: [
@@ -1257,7 +1257,7 @@ const menus = {
 			description: localize("Clicks automatically after hovering in one place."),
 		},
 		{
-			emoji_icon: "🔍",
+			emoji_icon: "",
 			// label: localize("&Enlarge Buttons"), // too specific; it also enlarges windows and other UI elements
 			label: localize("&Enlarge UI"), // a bit technical, but hopefully common enough
 			// label: localize("&Enlarge Interface"), // avoids an acronym, but not much less technical
@@ -1279,7 +1279,7 @@ const menus = {
 			description: localize("Enlarges buttons, windows, and menus for easier clicking."),
 		},
 		{
-			emoji_icon: "↩️", // doesn't match orientation of the actual button icon's arrow
+			emoji_icon: "", // doesn't match orientation of the actual button icon's arrow
 			// label: localize("&Floating Undo/Redo Buttons"),
 			// label: localize("Easy Undo/Redo"),
 			// label: localize("Easy &Undo"),
@@ -1300,7 +1300,7 @@ const menus = {
 			description: localize("Adds a button for undoing the last action."),
 		},
 		{
-			emoji_icon: "↕️",
+			emoji_icon: "",
 			label: localize("&Vertical Color Box"),
 			speech_recognition: [
 				"toggle vertical color box", "toggle vertical color box mode",
@@ -1322,7 +1322,7 @@ const menus = {
 			description: localize("Arranges the color box vertically."),
 		},
 		{
-			emoji_icon: "🎙️",
+			emoji_icon: "",
 			label: localize("&Speech Recognition"),
 			speech_recognition: [
 				"toggle speech recognition", "toggle speech recognition mode",
@@ -1345,7 +1345,7 @@ const menus = {
 		},
 		MENU_DIVIDER,
 		{
-			emoji_icon: "🗃️",
+			emoji_icon: "",
 			label: localize("Manage Storage"),
 			speech_recognition: [
 				// This is a duplicate menu item (for easy access), so it doesn't need speech recognition data here.
@@ -1355,7 +1355,7 @@ const menus = {
 		},
 		MENU_DIVIDER,
 		{
-			emoji_icon: "📢",
+			emoji_icon: "",
 			label: localize("Project News"),
 			speech_recognition: [
 				"project news", "news about the project", "news about this project",
@@ -1368,7 +1368,7 @@ const menus = {
 			description: localize("Shows news about JS Paint."),
 		},
 		{
-			emoji_icon: "👾", // "👋",
+			emoji_icon: "", // "👋",
 			label: localize("Discord"),
 			speech_recognition: [
 				"chat on discord", "discord server", "discord community", "join the discord", "join discord", "visit the discord", "visit discord", "discord chat",
@@ -1379,7 +1379,7 @@ const menus = {
 			description: localize("Joins the community on Discord."),
 		},
 		{
-			emoji_icon: "ℹ️",
+			emoji_icon: "",
 			label: localize("GitHub"),
 			speech_recognition: [
 				"repo on github", "project on github", "show the source code", "show source code",
@@ -1388,7 +1388,7 @@ const menus = {
 			description: localize("Shows the project on GitHub."),
 		},
 		{
-			emoji_icon: "💵",
+			emoji_icon: "",
 			label: localize("Donate"),
 			speech_recognition: [
 				"donate", "make a monetary contribution",
